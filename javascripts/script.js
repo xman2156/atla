@@ -1,6 +1,6 @@
 //Automatic episode change
 var episodeList = [
-  ['The Last Stand','ATLA Live Action',new Date("2014-12-19T00:00:00-05:00")]
+  ['The Last Stand',"Netflix's Avatar: The Last Airbender",new Date("2014-12-19T00:00:00-05:00"),new Date("2024-02-22T00:00:00-05:00")]
 ];
 var startDate = new Date("2022-03-26T09:00:00-05:00");
 var today = Date.now();
@@ -89,7 +89,7 @@ var hiatusList = [
   ['Light in the Dark','A Breath of Fresh Air','Nov 22 2013','Jun 27 2014',217,''],
   ['The Terror Within','The Stakeout','Jul 25 2014','Oct 6 2014',73,''],
   ['Venom of the Red Lotus','After All These Years','Oct 9 2014','Nov 28 2014',50,''],
-  ['The Last Stand','???','Dec 19 2014','???',,'']
+  ['The Last Stand',"Netflix's Avatar: The Last Airbender",'Dec 19 2014','Feb 22 2024',,'']
 ];
 
 //makes an HTML table from the array
