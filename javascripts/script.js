@@ -1,14 +1,7 @@
-//Automatic episode change
-var episodeList = [
-  ["Netflix's Avatar: The Last Airbender", '???', new Date("2024-02-22T00:00:00-05:00")]
-];
-var startDate = new Date("2022-03-26T09:00:00-05:00");
-var today = Date.now();
-var weeksPassed = 0; //Math.floor((today - Date.parse(startDate))/(24*3600*1000*7)); //comment out equation when on hiatus
-var latestRelease = episodeList[weeksPassed][2];
-var nextRelease = episodeList[weeksPassed][3];
-document.getElementById("previousEpisode").innerHTML = episodeList[weeksPassed][0];
-document.getElementById("nextEpisode").innerHTML = episodeList[weeksPassed][1];
+var latestRelease = new Date("2024-02-22T00:00:00-05:00");
+var oneDay = 24*60*60*1000;
+var mode = 0; //DD:HH:MM:SS mode is default
+var lastHiatusMention = null;
 
 var oneDay = 24*60*60*1000;
 var mode = 0; //DD:HH:MM:SS mode is default
@@ -89,7 +82,7 @@ var hiatusList = [
   ['Light in the Dark','A Breath of Fresh Air','Nov 22 2013','Jun 27 2014',217,''],
   ['The Terror Within','The Stakeout','Jul 25 2014','Oct 6 2014',73,''],
   ['Venom of the Red Lotus','After All These Years','Oct 9 2014','Nov 28 2014',50,''],
-  ['The Last Stand',"Netflix's Avatar: The Last Airbender",'Dec 19 2014','Feb 22 2024',3352,"Hiatus between TLOK & Netflix's ATLA"],
+  ['The Last Stand',"Aang",'Dec 19 2014','Feb 22 2024',3352,"Hiatus between TLOK & Netflix's ATLA"],
   ['Legends','???', 'Feb 22 2024','???',,'']
 ];
 

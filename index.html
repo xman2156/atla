@@ -3,7 +3,7 @@
     <title>The Silence of Aang - Avatar: The Last Airbender Hiatus Tracker</title>
 
     <meta charset="UTF-8">
-    <meta name="description" content="Tracks the length between episodes of the Avatar: The Last Airbender Universe,
+    <meta name="description" content="Tracks the length between episodes and movies from the Avatar: The Last Airbender Universe,
     as well as keeping a list of these hiatuses.">
 
     <link rel="stylesheet" type="text/css" href="style/style.css">  
@@ -46,14 +46,14 @@
       </div>
       <button id="infoBtn">i</button>
 
-      <div class="topnav">
-        <a class = "website" href="https://xman2156.github.io/arcane/">Arcane</a>
+      <div class="topnav" id="myTopnav">
         <a class = "active website" href="https://xman2156.github.io/atla/">ATLA</a>
         <div class= "dropdown">
           <button class="dropbtn">The Graveyard
             <i class="fa-solid fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
+            <a href="https://xman2156.github.io/arcane/">Arcane</a>
             <a href="https://xman2156.github.io/TOH/">The Owl House</a>
             <a href="https://xman2156.github.io/amphibia/">Amphibia</a>
             <a href="https://xman2156.github.io/spop/">She-Ra</a>
@@ -63,25 +63,17 @@
         <a class = "report website" target="_blank" href="https://forms.gle/St9a76Ca95swT4am9">Report a bug or ask a question</a>
       </div>
 
-      <!--<div class="alert">
-        <span class="closebtn">&times;</span>
-        <strong>INFO!</strong> I recently started 
-        <a target="_blank" href="https://twitter.com/AnimationHiatus">a Twitter page</a> 
-        to share updates about the sites and new projects.
-      </div>-->
-
       <div class="count">
         <h1>It has been</h1>
         <h1 style="font-size:600%">
         <span id="count">xxx</span></h1>
         <h1>
-          "<span id="previousEpisode">xxx</span>"
+          since <br> Netflix's ATLA Season 1 ended
         </h1>
       </div>
 
       <div class="tab">
         <p style="font-size:150%">
-          <!--Note: ATLA is currently not on hiatus.<br>-->
           <a onclick=switchMode() id="changeCount"> Click here <span id="moreorless">to count less precisely.</span></a>
         </p>
         <hr class="spacer">
@@ -112,20 +104,12 @@
 
         <div class="link">
           <h3>
-            You can find me on <a class="links" target="_blank" href="https://github.com/xman2156">GitHub</a> & <a class="links" target="_blank" href="https://twitter.com/AnimationHiatus">Twitter</a><br>
+            You can find me on <a class="links" target="_blank" href="https://github.com/xman2156">GitHub</a><br>
             <a class="links" target="_blank" href="https://github.com/TurtleByte/stevenhiatus/tree/gh-pages"> Credit to TurtleByte for original idea</a>
           </h3>
           <br>
         </div>
       </div>
     </div>
-    <script>
-      var close = document.getElementsByClassName("closebtn");
-        close[0].onclick = function(){
-          var div = this.parentElement;
-          div.style.opacity = "0";
-          setTimeout(function(){ div.style.display = "none"; }, 600);
-        }
-    </script>
   </body>
 </html>
